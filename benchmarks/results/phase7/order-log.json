@@ -1,0 +1,1610 @@
+[
+  {
+    "rep": 0,
+    "taskId": "ST1",
+    "condOrder": [
+      "FULL_CONTROL",
+      "RETRIEVAL_75"
+    ]
+  },
+  {
+    "rep": 0,
+    "taskId": "ST2",
+    "condOrder": [
+      "RETRIEVAL_75",
+      "FULL_CONTROL"
+    ]
+  },
+  {
+    "rep": 0,
+    "taskId": "MS1",
+    "condOrder": [
+      "FULL_CONTROL",
+      "RETRIEVAL_75"
+    ]
+  },
+  {
+    "rep": 0,
+    "taskId": "MS2",
+    "condOrder": [
+      "RETRIEVAL_75",
+      "FULL_CONTROL"
+    ]
+  },
+  {
+    "rep": 0,
+    "taskId": "ER1",
+    "condOrder": [
+      "FULL_CONTROL",
+      "RETRIEVAL_75"
+    ]
+  },
+  {
+    "rep": 0,
+    "taskId": "ER2",
+    "condOrder": [
+      "RETRIEVAL_75",
+      "FULL_CONTROL"
+    ]
+  },
+  {
+    "rep": 0,
+    "taskId": "TO1",
+    "condOrder": [
+      "FULL_CONTROL",
+      "RETRIEVAL_75"
+    ]
+  },
+  {
+    "rep": 0,
+    "taskId": "TO2",
+    "condOrder": [
+      "RETRIEVAL_75",
+      "FULL_CONTROL"
+    ]
+  },
+  {
+    "rep": 0,
+    "taskId": "CP1",
+    "condOrder": [
+      "FULL_CONTROL",
+      "RETRIEVAL_75"
+    ]
+  },
+  {
+    "rep": 0,
+    "taskId": "CP2",
+    "condOrder": [
+      "RETRIEVAL_75",
+      "FULL_CONTROL"
+    ]
+  },
+  {
+    "rep": 0,
+    "taskId": "CF1",
+    "condOrder": [
+      "FULL_CONTROL",
+      "RETRIEVAL_75"
+    ]
+  },
+  {
+    "rep": 0,
+    "taskId": "CF2",
+    "condOrder": [
+      "RETRIEVAL_75",
+      "FULL_CONTROL"
+    ]
+  },
+  {
+    "rep": 0,
+    "taskId": "AS1",
+    "condOrder": [
+      "FULL_CONTROL",
+      "RETRIEVAL_75"
+    ]
+  },
+  {
+    "rep": 0,
+    "taskId": "AS2",
+    "condOrder": [
+      "RETRIEVAL_75",
+      "FULL_CONTROL"
+    ]
+  },
+  {
+    "rep": 0,
+    "taskId": "CV1",
+    "condOrder": [
+      "FULL_CONTROL",
+      "RETRIEVAL_75"
+    ]
+  },
+  {
+    "rep": 0,
+    "taskId": "CV2",
+    "condOrder": [
+      "RETRIEVAL_75",
+      "FULL_CONTROL"
+    ]
+  },
+  {
+    "rep": 0,
+    "taskId": "RA1",
+    "condOrder": [
+      "FULL_CONTROL",
+      "RETRIEVAL_75"
+    ]
+  },
+  {
+    "rep": 0,
+    "taskId": "RA2",
+    "condOrder": [
+      "RETRIEVAL_75",
+      "FULL_CONTROL"
+    ]
+  },
+  {
+    "rep": 0,
+    "taskId": "DC1",
+    "condOrder": [
+      "FULL_CONTROL",
+      "RETRIEVAL_75"
+    ]
+  },
+  {
+    "rep": 0,
+    "taskId": "DC2",
+    "condOrder": [
+      "RETRIEVAL_75",
+      "FULL_CONTROL"
+    ]
+  },
+  {
+    "rep": 1,
+    "taskId": "ST1",
+    "condOrder": [
+      "RETRIEVAL_75",
+      "FULL_CONTROL"
+    ]
+  },
+  {
+    "rep": 1,
+    "taskId": "ST2",
+    "condOrder": [
+      "FULL_CONTROL",
+      "RETRIEVAL_75"
+    ]
+  },
+  {
+    "rep": 1,
+    "taskId": "MS1",
+    "condOrder": [
+      "RETRIEVAL_75",
+      "FULL_CONTROL"
+    ]
+  },
+  {
+    "rep": 1,
+    "taskId": "MS2",
+    "condOrder": [
+      "FULL_CONTROL",
+      "RETRIEVAL_75"
+    ]
+  },
+  {
+    "rep": 1,
+    "taskId": "ER1",
+    "condOrder": [
+      "RETRIEVAL_75",
+      "FULL_CONTROL"
+    ]
+  },
+  {
+    "rep": 1,
+    "taskId": "ER2",
+    "condOrder": [
+      "FULL_CONTROL",
+      "RETRIEVAL_75"
+    ]
+  },
+  {
+    "rep": 1,
+    "taskId": "TO1",
+    "condOrder": [
+      "RETRIEVAL_75",
+      "FULL_CONTROL"
+    ]
+  },
+  {
+    "rep": 1,
+    "taskId": "TO2",
+    "condOrder": [
+      "FULL_CONTROL",
+      "RETRIEVAL_75"
+    ]
+  },
+  {
+    "rep": 1,
+    "taskId": "CP1",
+    "condOrder": [
+      "RETRIEVAL_75",
+      "FULL_CONTROL"
+    ]
+  },
+  {
+    "rep": 1,
+    "taskId": "CP2",
+    "condOrder": [
+      "FULL_CONTROL",
+      "RETRIEVAL_75"
+    ]
+  },
+  {
+    "rep": 1,
+    "taskId": "CF1",
+    "condOrder": [
+      "RETRIEVAL_75",
+      "FULL_CONTROL"
+    ]
+  },
+  {
+    "rep": 1,
+    "taskId": "CF2",
+    "condOrder": [
+      "FULL_CONTROL",
+      "RETRIEVAL_75"
+    ]
+  },
+  {
+    "rep": 1,
+    "taskId": "AS1",
+    "condOrder": [
+      "RETRIEVAL_75",
+      "FULL_CONTROL"
+    ]
+  },
+  {
+    "rep": 1,
+    "taskId": "AS2",
+    "condOrder": [
+      "FULL_CONTROL",
+      "RETRIEVAL_75"
+    ]
+  },
+  {
+    "rep": 1,
+    "taskId": "CV1",
+    "condOrder": [
+      "RETRIEVAL_75",
+      "FULL_CONTROL"
+    ]
+  },
+  {
+    "rep": 1,
+    "taskId": "CV2",
+    "condOrder": [
+      "FULL_CONTROL",
+      "RETRIEVAL_75"
+    ]
+  },
+  {
+    "rep": 1,
+    "taskId": "RA1",
+    "condOrder": [
+      "RETRIEVAL_75",
+      "FULL_CONTROL"
+    ]
+  },
+  {
+    "rep": 1,
+    "taskId": "RA2",
+    "condOrder": [
+      "FULL_CONTROL",
+      "RETRIEVAL_75"
+    ]
+  },
+  {
+    "rep": 1,
+    "taskId": "DC1",
+    "condOrder": [
+      "RETRIEVAL_75",
+      "FULL_CONTROL"
+    ]
+  },
+  {
+    "rep": 1,
+    "taskId": "DC2",
+    "condOrder": [
+      "FULL_CONTROL",
+      "RETRIEVAL_75"
+    ]
+  },
+  {
+    "rep": 2,
+    "taskId": "ST1",
+    "condOrder": [
+      "FULL_CONTROL",
+      "RETRIEVAL_75"
+    ]
+  },
+  {
+    "rep": 2,
+    "taskId": "ST2",
+    "condOrder": [
+      "RETRIEVAL_75",
+      "FULL_CONTROL"
+    ]
+  },
+  {
+    "rep": 2,
+    "taskId": "MS1",
+    "condOrder": [
+      "FULL_CONTROL",
+      "RETRIEVAL_75"
+    ]
+  },
+  {
+    "rep": 2,
+    "taskId": "MS2",
+    "condOrder": [
+      "RETRIEVAL_75",
+      "FULL_CONTROL"
+    ]
+  },
+  {
+    "rep": 2,
+    "taskId": "ER1",
+    "condOrder": [
+      "FULL_CONTROL",
+      "RETRIEVAL_75"
+    ]
+  },
+  {
+    "rep": 2,
+    "taskId": "ER2",
+    "condOrder": [
+      "RETRIEVAL_75",
+      "FULL_CONTROL"
+    ]
+  },
+  {
+    "rep": 2,
+    "taskId": "TO1",
+    "condOrder": [
+      "FULL_CONTROL",
+      "RETRIEVAL_75"
+    ]
+  },
+  {
+    "rep": 2,
+    "taskId": "TO2",
+    "condOrder": [
+      "RETRIEVAL_75",
+      "FULL_CONTROL"
+    ]
+  },
+  {
+    "rep": 2,
+    "taskId": "CP1",
+    "condOrder": [
+      "FULL_CONTROL",
+      "RETRIEVAL_75"
+    ]
+  },
+  {
+    "rep": 2,
+    "taskId": "CP2",
+    "condOrder": [
+      "RETRIEVAL_75",
+      "FULL_CONTROL"
+    ]
+  },
+  {
+    "rep": 2,
+    "taskId": "CF1",
+    "condOrder": [
+      "FULL_CONTROL",
+      "RETRIEVAL_75"
+    ]
+  },
+  {
+    "rep": 2,
+    "taskId": "CF2",
+    "condOrder": [
+      "RETRIEVAL_75",
+      "FULL_CONTROL"
+    ]
+  },
+  {
+    "rep": 2,
+    "taskId": "AS1",
+    "condOrder": [
+      "FULL_CONTROL",
+      "RETRIEVAL_75"
+    ]
+  },
+  {
+    "rep": 2,
+    "taskId": "AS2",
+    "condOrder": [
+      "RETRIEVAL_75",
+      "FULL_CONTROL"
+    ]
+  },
+  {
+    "rep": 2,
+    "taskId": "CV1",
+    "condOrder": [
+      "FULL_CONTROL",
+      "RETRIEVAL_75"
+    ]
+  },
+  {
+    "rep": 2,
+    "taskId": "CV2",
+    "condOrder": [
+      "RETRIEVAL_75",
+      "FULL_CONTROL"
+    ]
+  },
+  {
+    "rep": 2,
+    "taskId": "RA1",
+    "condOrder": [
+      "FULL_CONTROL",
+      "RETRIEVAL_75"
+    ]
+  },
+  {
+    "rep": 2,
+    "taskId": "RA2",
+    "condOrder": [
+      "RETRIEVAL_75",
+      "FULL_CONTROL"
+    ]
+  },
+  {
+    "rep": 2,
+    "taskId": "DC1",
+    "condOrder": [
+      "FULL_CONTROL",
+      "RETRIEVAL_75"
+    ]
+  },
+  {
+    "rep": 2,
+    "taskId": "DC2",
+    "condOrder": [
+      "RETRIEVAL_75",
+      "FULL_CONTROL"
+    ]
+  },
+  {
+    "rep": 3,
+    "taskId": "ST1",
+    "condOrder": [
+      "RETRIEVAL_75",
+      "FULL_CONTROL"
+    ]
+  },
+  {
+    "rep": 3,
+    "taskId": "ST2",
+    "condOrder": [
+      "FULL_CONTROL",
+      "RETRIEVAL_75"
+    ]
+  },
+  {
+    "rep": 3,
+    "taskId": "MS1",
+    "condOrder": [
+      "RETRIEVAL_75",
+      "FULL_CONTROL"
+    ]
+  },
+  {
+    "rep": 3,
+    "taskId": "MS2",
+    "condOrder": [
+      "FULL_CONTROL",
+      "RETRIEVAL_75"
+    ]
+  },
+  {
+    "rep": 3,
+    "taskId": "ER1",
+    "condOrder": [
+      "RETRIEVAL_75",
+      "FULL_CONTROL"
+    ]
+  },
+  {
+    "rep": 3,
+    "taskId": "ER2",
+    "condOrder": [
+      "FULL_CONTROL",
+      "RETRIEVAL_75"
+    ]
+  },
+  {
+    "rep": 3,
+    "taskId": "TO1",
+    "condOrder": [
+      "RETRIEVAL_75",
+      "FULL_CONTROL"
+    ]
+  },
+  {
+    "rep": 3,
+    "taskId": "TO2",
+    "condOrder": [
+      "FULL_CONTROL",
+      "RETRIEVAL_75"
+    ]
+  },
+  {
+    "rep": 3,
+    "taskId": "CP1",
+    "condOrder": [
+      "RETRIEVAL_75",
+      "FULL_CONTROL"
+    ]
+  },
+  {
+    "rep": 3,
+    "taskId": "CP2",
+    "condOrder": [
+      "FULL_CONTROL",
+      "RETRIEVAL_75"
+    ]
+  },
+  {
+    "rep": 3,
+    "taskId": "CF1",
+    "condOrder": [
+      "RETRIEVAL_75",
+      "FULL_CONTROL"
+    ]
+  },
+  {
+    "rep": 3,
+    "taskId": "CF2",
+    "condOrder": [
+      "FULL_CONTROL",
+      "RETRIEVAL_75"
+    ]
+  },
+  {
+    "rep": 3,
+    "taskId": "AS1",
+    "condOrder": [
+      "RETRIEVAL_75",
+      "FULL_CONTROL"
+    ]
+  },
+  {
+    "rep": 3,
+    "taskId": "AS2",
+    "condOrder": [
+      "FULL_CONTROL",
+      "RETRIEVAL_75"
+    ]
+  },
+  {
+    "rep": 3,
+    "taskId": "CV1",
+    "condOrder": [
+      "RETRIEVAL_75",
+      "FULL_CONTROL"
+    ]
+  },
+  {
+    "rep": 3,
+    "taskId": "CV2",
+    "condOrder": [
+      "FULL_CONTROL",
+      "RETRIEVAL_75"
+    ]
+  },
+  {
+    "rep": 3,
+    "taskId": "RA1",
+    "condOrder": [
+      "RETRIEVAL_75",
+      "FULL_CONTROL"
+    ]
+  },
+  {
+    "rep": 3,
+    "taskId": "RA2",
+    "condOrder": [
+      "FULL_CONTROL",
+      "RETRIEVAL_75"
+    ]
+  },
+  {
+    "rep": 3,
+    "taskId": "DC1",
+    "condOrder": [
+      "RETRIEVAL_75",
+      "FULL_CONTROL"
+    ]
+  },
+  {
+    "rep": 3,
+    "taskId": "DC2",
+    "condOrder": [
+      "FULL_CONTROL",
+      "RETRIEVAL_75"
+    ]
+  },
+  {
+    "rep": 4,
+    "taskId": "ST1",
+    "condOrder": [
+      "FULL_CONTROL",
+      "RETRIEVAL_75"
+    ]
+  },
+  {
+    "rep": 4,
+    "taskId": "ST2",
+    "condOrder": [
+      "RETRIEVAL_75",
+      "FULL_CONTROL"
+    ]
+  },
+  {
+    "rep": 4,
+    "taskId": "MS1",
+    "condOrder": [
+      "FULL_CONTROL",
+      "RETRIEVAL_75"
+    ]
+  },
+  {
+    "rep": 4,
+    "taskId": "MS2",
+    "condOrder": [
+      "RETRIEVAL_75",
+      "FULL_CONTROL"
+    ]
+  },
+  {
+    "rep": 4,
+    "taskId": "ER1",
+    "condOrder": [
+      "FULL_CONTROL",
+      "RETRIEVAL_75"
+    ]
+  },
+  {
+    "rep": 4,
+    "taskId": "ER2",
+    "condOrder": [
+      "RETRIEVAL_75",
+      "FULL_CONTROL"
+    ]
+  },
+  {
+    "rep": 4,
+    "taskId": "TO1",
+    "condOrder": [
+      "FULL_CONTROL",
+      "RETRIEVAL_75"
+    ]
+  },
+  {
+    "rep": 4,
+    "taskId": "TO2",
+    "condOrder": [
+      "RETRIEVAL_75",
+      "FULL_CONTROL"
+    ]
+  },
+  {
+    "rep": 4,
+    "taskId": "CP1",
+    "condOrder": [
+      "FULL_CONTROL",
+      "RETRIEVAL_75"
+    ]
+  },
+  {
+    "rep": 4,
+    "taskId": "CP2",
+    "condOrder": [
+      "RETRIEVAL_75",
+      "FULL_CONTROL"
+    ]
+  },
+  {
+    "rep": 4,
+    "taskId": "CF1",
+    "condOrder": [
+      "FULL_CONTROL",
+      "RETRIEVAL_75"
+    ]
+  },
+  {
+    "rep": 4,
+    "taskId": "CF2",
+    "condOrder": [
+      "RETRIEVAL_75",
+      "FULL_CONTROL"
+    ]
+  },
+  {
+    "rep": 4,
+    "taskId": "AS1",
+    "condOrder": [
+      "FULL_CONTROL",
+      "RETRIEVAL_75"
+    ]
+  },
+  {
+    "rep": 4,
+    "taskId": "AS2",
+    "condOrder": [
+      "RETRIEVAL_75",
+      "FULL_CONTROL"
+    ]
+  },
+  {
+    "rep": 4,
+    "taskId": "CV1",
+    "condOrder": [
+      "FULL_CONTROL",
+      "RETRIEVAL_75"
+    ]
+  },
+  {
+    "rep": 4,
+    "taskId": "CV2",
+    "condOrder": [
+      "RETRIEVAL_75",
+      "FULL_CONTROL"
+    ]
+  },
+  {
+    "rep": 4,
+    "taskId": "RA1",
+    "condOrder": [
+      "FULL_CONTROL",
+      "RETRIEVAL_75"
+    ]
+  },
+  {
+    "rep": 4,
+    "taskId": "RA2",
+    "condOrder": [
+      "RETRIEVAL_75",
+      "FULL_CONTROL"
+    ]
+  },
+  {
+    "rep": 4,
+    "taskId": "DC1",
+    "condOrder": [
+      "FULL_CONTROL",
+      "RETRIEVAL_75"
+    ]
+  },
+  {
+    "rep": 4,
+    "taskId": "DC2",
+    "condOrder": [
+      "RETRIEVAL_75",
+      "FULL_CONTROL"
+    ]
+  },
+  {
+    "rep": 5,
+    "taskId": "ST1",
+    "condOrder": [
+      "RETRIEVAL_75",
+      "FULL_CONTROL"
+    ]
+  },
+  {
+    "rep": 5,
+    "taskId": "ST2",
+    "condOrder": [
+      "FULL_CONTROL",
+      "RETRIEVAL_75"
+    ]
+  },
+  {
+    "rep": 5,
+    "taskId": "MS1",
+    "condOrder": [
+      "RETRIEVAL_75",
+      "FULL_CONTROL"
+    ]
+  },
+  {
+    "rep": 5,
+    "taskId": "MS2",
+    "condOrder": [
+      "FULL_CONTROL",
+      "RETRIEVAL_75"
+    ]
+  },
+  {
+    "rep": 5,
+    "taskId": "ER1",
+    "condOrder": [
+      "RETRIEVAL_75",
+      "FULL_CONTROL"
+    ]
+  },
+  {
+    "rep": 5,
+    "taskId": "ER2",
+    "condOrder": [
+      "FULL_CONTROL",
+      "RETRIEVAL_75"
+    ]
+  },
+  {
+    "rep": 5,
+    "taskId": "TO1",
+    "condOrder": [
+      "RETRIEVAL_75",
+      "FULL_CONTROL"
+    ]
+  },
+  {
+    "rep": 5,
+    "taskId": "TO2",
+    "condOrder": [
+      "FULL_CONTROL",
+      "RETRIEVAL_75"
+    ]
+  },
+  {
+    "rep": 5,
+    "taskId": "CP1",
+    "condOrder": [
+      "RETRIEVAL_75",
+      "FULL_CONTROL"
+    ]
+  },
+  {
+    "rep": 5,
+    "taskId": "CP2",
+    "condOrder": [
+      "FULL_CONTROL",
+      "RETRIEVAL_75"
+    ]
+  },
+  {
+    "rep": 5,
+    "taskId": "CF1",
+    "condOrder": [
+      "RETRIEVAL_75",
+      "FULL_CONTROL"
+    ]
+  },
+  {
+    "rep": 5,
+    "taskId": "CF2",
+    "condOrder": [
+      "FULL_CONTROL",
+      "RETRIEVAL_75"
+    ]
+  },
+  {
+    "rep": 5,
+    "taskId": "AS1",
+    "condOrder": [
+      "RETRIEVAL_75",
+      "FULL_CONTROL"
+    ]
+  },
+  {
+    "rep": 5,
+    "taskId": "AS2",
+    "condOrder": [
+      "FULL_CONTROL",
+      "RETRIEVAL_75"
+    ]
+  },
+  {
+    "rep": 5,
+    "taskId": "CV1",
+    "condOrder": [
+      "RETRIEVAL_75",
+      "FULL_CONTROL"
+    ]
+  },
+  {
+    "rep": 5,
+    "taskId": "CV2",
+    "condOrder": [
+      "FULL_CONTROL",
+      "RETRIEVAL_75"
+    ]
+  },
+  {
+    "rep": 5,
+    "taskId": "RA1",
+    "condOrder": [
+      "RETRIEVAL_75",
+      "FULL_CONTROL"
+    ]
+  },
+  {
+    "rep": 5,
+    "taskId": "RA2",
+    "condOrder": [
+      "FULL_CONTROL",
+      "RETRIEVAL_75"
+    ]
+  },
+  {
+    "rep": 5,
+    "taskId": "DC1",
+    "condOrder": [
+      "RETRIEVAL_75",
+      "FULL_CONTROL"
+    ]
+  },
+  {
+    "rep": 5,
+    "taskId": "DC2",
+    "condOrder": [
+      "FULL_CONTROL",
+      "RETRIEVAL_75"
+    ]
+  },
+  {
+    "rep": 6,
+    "taskId": "ST1",
+    "condOrder": [
+      "FULL_CONTROL",
+      "RETRIEVAL_75"
+    ]
+  },
+  {
+    "rep": 6,
+    "taskId": "ST2",
+    "condOrder": [
+      "RETRIEVAL_75",
+      "FULL_CONTROL"
+    ]
+  },
+  {
+    "rep": 6,
+    "taskId": "MS1",
+    "condOrder": [
+      "FULL_CONTROL",
+      "RETRIEVAL_75"
+    ]
+  },
+  {
+    "rep": 6,
+    "taskId": "MS2",
+    "condOrder": [
+      "RETRIEVAL_75",
+      "FULL_CONTROL"
+    ]
+  },
+  {
+    "rep": 6,
+    "taskId": "ER1",
+    "condOrder": [
+      "FULL_CONTROL",
+      "RETRIEVAL_75"
+    ]
+  },
+  {
+    "rep": 6,
+    "taskId": "ER2",
+    "condOrder": [
+      "RETRIEVAL_75",
+      "FULL_CONTROL"
+    ]
+  },
+  {
+    "rep": 6,
+    "taskId": "TO1",
+    "condOrder": [
+      "FULL_CONTROL",
+      "RETRIEVAL_75"
+    ]
+  },
+  {
+    "rep": 6,
+    "taskId": "TO2",
+    "condOrder": [
+      "RETRIEVAL_75",
+      "FULL_CONTROL"
+    ]
+  },
+  {
+    "rep": 6,
+    "taskId": "CP1",
+    "condOrder": [
+      "FULL_CONTROL",
+      "RETRIEVAL_75"
+    ]
+  },
+  {
+    "rep": 6,
+    "taskId": "CP2",
+    "condOrder": [
+      "RETRIEVAL_75",
+      "FULL_CONTROL"
+    ]
+  },
+  {
+    "rep": 6,
+    "taskId": "CF1",
+    "condOrder": [
+      "FULL_CONTROL",
+      "RETRIEVAL_75"
+    ]
+  },
+  {
+    "rep": 6,
+    "taskId": "CF2",
+    "condOrder": [
+      "RETRIEVAL_75",
+      "FULL_CONTROL"
+    ]
+  },
+  {
+    "rep": 6,
+    "taskId": "AS1",
+    "condOrder": [
+      "FULL_CONTROL",
+      "RETRIEVAL_75"
+    ]
+  },
+  {
+    "rep": 6,
+    "taskId": "AS2",
+    "condOrder": [
+      "RETRIEVAL_75",
+      "FULL_CONTROL"
+    ]
+  },
+  {
+    "rep": 6,
+    "taskId": "CV1",
+    "condOrder": [
+      "FULL_CONTROL",
+      "RETRIEVAL_75"
+    ]
+  },
+  {
+    "rep": 6,
+    "taskId": "CV2",
+    "condOrder": [
+      "RETRIEVAL_75",
+      "FULL_CONTROL"
+    ]
+  },
+  {
+    "rep": 6,
+    "taskId": "RA1",
+    "condOrder": [
+      "FULL_CONTROL",
+      "RETRIEVAL_75"
+    ]
+  },
+  {
+    "rep": 6,
+    "taskId": "RA2",
+    "condOrder": [
+      "RETRIEVAL_75",
+      "FULL_CONTROL"
+    ]
+  },
+  {
+    "rep": 6,
+    "taskId": "DC1",
+    "condOrder": [
+      "FULL_CONTROL",
+      "RETRIEVAL_75"
+    ]
+  },
+  {
+    "rep": 6,
+    "taskId": "DC2",
+    "condOrder": [
+      "RETRIEVAL_75",
+      "FULL_CONTROL"
+    ]
+  },
+  {
+    "rep": 7,
+    "taskId": "ST1",
+    "condOrder": [
+      "RETRIEVAL_75",
+      "FULL_CONTROL"
+    ]
+  },
+  {
+    "rep": 7,
+    "taskId": "ST2",
+    "condOrder": [
+      "FULL_CONTROL",
+      "RETRIEVAL_75"
+    ]
+  },
+  {
+    "rep": 7,
+    "taskId": "MS1",
+    "condOrder": [
+      "RETRIEVAL_75",
+      "FULL_CONTROL"
+    ]
+  },
+  {
+    "rep": 7,
+    "taskId": "MS2",
+    "condOrder": [
+      "FULL_CONTROL",
+      "RETRIEVAL_75"
+    ]
+  },
+  {
+    "rep": 7,
+    "taskId": "ER1",
+    "condOrder": [
+      "RETRIEVAL_75",
+      "FULL_CONTROL"
+    ]
+  },
+  {
+    "rep": 7,
+    "taskId": "ER2",
+    "condOrder": [
+      "FULL_CONTROL",
+      "RETRIEVAL_75"
+    ]
+  },
+  {
+    "rep": 7,
+    "taskId": "TO1",
+    "condOrder": [
+      "RETRIEVAL_75",
+      "FULL_CONTROL"
+    ]
+  },
+  {
+    "rep": 7,
+    "taskId": "TO2",
+    "condOrder": [
+      "FULL_CONTROL",
+      "RETRIEVAL_75"
+    ]
+  },
+  {
+    "rep": 7,
+    "taskId": "CP1",
+    "condOrder": [
+      "RETRIEVAL_75",
+      "FULL_CONTROL"
+    ]
+  },
+  {
+    "rep": 7,
+    "taskId": "CP2",
+    "condOrder": [
+      "FULL_CONTROL",
+      "RETRIEVAL_75"
+    ]
+  },
+  {
+    "rep": 7,
+    "taskId": "CF1",
+    "condOrder": [
+      "RETRIEVAL_75",
+      "FULL_CONTROL"
+    ]
+  },
+  {
+    "rep": 7,
+    "taskId": "CF2",
+    "condOrder": [
+      "FULL_CONTROL",
+      "RETRIEVAL_75"
+    ]
+  },
+  {
+    "rep": 7,
+    "taskId": "AS1",
+    "condOrder": [
+      "RETRIEVAL_75",
+      "FULL_CONTROL"
+    ]
+  },
+  {
+    "rep": 7,
+    "taskId": "AS2",
+    "condOrder": [
+      "FULL_CONTROL",
+      "RETRIEVAL_75"
+    ]
+  },
+  {
+    "rep": 7,
+    "taskId": "CV1",
+    "condOrder": [
+      "RETRIEVAL_75",
+      "FULL_CONTROL"
+    ]
+  },
+  {
+    "rep": 7,
+    "taskId": "CV2",
+    "condOrder": [
+      "FULL_CONTROL",
+      "RETRIEVAL_75"
+    ]
+  },
+  {
+    "rep": 7,
+    "taskId": "RA1",
+    "condOrder": [
+      "RETRIEVAL_75",
+      "FULL_CONTROL"
+    ]
+  },
+  {
+    "rep": 7,
+    "taskId": "RA2",
+    "condOrder": [
+      "FULL_CONTROL",
+      "RETRIEVAL_75"
+    ]
+  },
+  {
+    "rep": 7,
+    "taskId": "DC1",
+    "condOrder": [
+      "RETRIEVAL_75",
+      "FULL_CONTROL"
+    ]
+  },
+  {
+    "rep": 7,
+    "taskId": "DC2",
+    "condOrder": [
+      "FULL_CONTROL",
+      "RETRIEVAL_75"
+    ]
+  },
+  {
+    "rep": 8,
+    "taskId": "ST1",
+    "condOrder": [
+      "FULL_CONTROL",
+      "RETRIEVAL_75"
+    ]
+  },
+  {
+    "rep": 8,
+    "taskId": "ST2",
+    "condOrder": [
+      "RETRIEVAL_75",
+      "FULL_CONTROL"
+    ]
+  },
+  {
+    "rep": 8,
+    "taskId": "MS1",
+    "condOrder": [
+      "FULL_CONTROL",
+      "RETRIEVAL_75"
+    ]
+  },
+  {
+    "rep": 8,
+    "taskId": "MS2",
+    "condOrder": [
+      "RETRIEVAL_75",
+      "FULL_CONTROL"
+    ]
+  },
+  {
+    "rep": 8,
+    "taskId": "ER1",
+    "condOrder": [
+      "FULL_CONTROL",
+      "RETRIEVAL_75"
+    ]
+  },
+  {
+    "rep": 8,
+    "taskId": "ER2",
+    "condOrder": [
+      "RETRIEVAL_75",
+      "FULL_CONTROL"
+    ]
+  },
+  {
+    "rep": 8,
+    "taskId": "TO1",
+    "condOrder": [
+      "FULL_CONTROL",
+      "RETRIEVAL_75"
+    ]
+  },
+  {
+    "rep": 8,
+    "taskId": "TO2",
+    "condOrder": [
+      "RETRIEVAL_75",
+      "FULL_CONTROL"
+    ]
+  },
+  {
+    "rep": 8,
+    "taskId": "CP1",
+    "condOrder": [
+      "FULL_CONTROL",
+      "RETRIEVAL_75"
+    ]
+  },
+  {
+    "rep": 8,
+    "taskId": "CP2",
+    "condOrder": [
+      "RETRIEVAL_75",
+      "FULL_CONTROL"
+    ]
+  },
+  {
+    "rep": 8,
+    "taskId": "CF1",
+    "condOrder": [
+      "FULL_CONTROL",
+      "RETRIEVAL_75"
+    ]
+  },
+  {
+    "rep": 8,
+    "taskId": "CF2",
+    "condOrder": [
+      "RETRIEVAL_75",
+      "FULL_CONTROL"
+    ]
+  },
+  {
+    "rep": 8,
+    "taskId": "AS1",
+    "condOrder": [
+      "FULL_CONTROL",
+      "RETRIEVAL_75"
+    ]
+  },
+  {
+    "rep": 8,
+    "taskId": "AS1",
+    "condOrder": [
+      "FULL_CONTROL",
+      "RETRIEVAL_75"
+    ]
+  },
+  {
+    "rep": 8,
+    "taskId": "AS2",
+    "condOrder": [
+      "RETRIEVAL_75",
+      "FULL_CONTROL"
+    ]
+  },
+  {
+    "rep": 8,
+    "taskId": "CV1",
+    "condOrder": [
+      "FULL_CONTROL",
+      "RETRIEVAL_75"
+    ]
+  },
+  {
+    "rep": 8,
+    "taskId": "CV2",
+    "condOrder": [
+      "RETRIEVAL_75",
+      "FULL_CONTROL"
+    ]
+  },
+  {
+    "rep": 8,
+    "taskId": "RA1",
+    "condOrder": [
+      "FULL_CONTROL",
+      "RETRIEVAL_75"
+    ]
+  },
+  {
+    "rep": 8,
+    "taskId": "RA2",
+    "condOrder": [
+      "RETRIEVAL_75",
+      "FULL_CONTROL"
+    ]
+  },
+  {
+    "rep": 8,
+    "taskId": "DC1",
+    "condOrder": [
+      "FULL_CONTROL",
+      "RETRIEVAL_75"
+    ]
+  },
+  {
+    "rep": 8,
+    "taskId": "DC2",
+    "condOrder": [
+      "RETRIEVAL_75",
+      "FULL_CONTROL"
+    ]
+  },
+  {
+    "rep": 9,
+    "taskId": "ST1",
+    "condOrder": [
+      "RETRIEVAL_75",
+      "FULL_CONTROL"
+    ]
+  },
+  {
+    "rep": 9,
+    "taskId": "ST2",
+    "condOrder": [
+      "FULL_CONTROL",
+      "RETRIEVAL_75"
+    ]
+  },
+  {
+    "rep": 9,
+    "taskId": "MS1",
+    "condOrder": [
+      "RETRIEVAL_75",
+      "FULL_CONTROL"
+    ]
+  },
+  {
+    "rep": 9,
+    "taskId": "MS2",
+    "condOrder": [
+      "FULL_CONTROL",
+      "RETRIEVAL_75"
+    ]
+  },
+  {
+    "rep": 9,
+    "taskId": "ER1",
+    "condOrder": [
+      "RETRIEVAL_75",
+      "FULL_CONTROL"
+    ]
+  },
+  {
+    "rep": 9,
+    "taskId": "ER2",
+    "condOrder": [
+      "FULL_CONTROL",
+      "RETRIEVAL_75"
+    ]
+  },
+  {
+    "rep": 9,
+    "taskId": "TO1",
+    "condOrder": [
+      "RETRIEVAL_75",
+      "FULL_CONTROL"
+    ]
+  },
+  {
+    "rep": 9,
+    "taskId": "TO2",
+    "condOrder": [
+      "FULL_CONTROL",
+      "RETRIEVAL_75"
+    ]
+  },
+  {
+    "rep": 9,
+    "taskId": "CP1",
+    "condOrder": [
+      "RETRIEVAL_75",
+      "FULL_CONTROL"
+    ]
+  },
+  {
+    "rep": 9,
+    "taskId": "CP2",
+    "condOrder": [
+      "FULL_CONTROL",
+      "RETRIEVAL_75"
+    ]
+  },
+  {
+    "rep": 9,
+    "taskId": "CF1",
+    "condOrder": [
+      "RETRIEVAL_75",
+      "FULL_CONTROL"
+    ]
+  },
+  {
+    "rep": 9,
+    "taskId": "CF2",
+    "condOrder": [
+      "FULL_CONTROL",
+      "RETRIEVAL_75"
+    ]
+  },
+  {
+    "rep": 9,
+    "taskId": "AS1",
+    "condOrder": [
+      "RETRIEVAL_75",
+      "FULL_CONTROL"
+    ]
+  },
+  {
+    "rep": 9,
+    "taskId": "AS2",
+    "condOrder": [
+      "FULL_CONTROL",
+      "RETRIEVAL_75"
+    ]
+  },
+  {
+    "rep": 9,
+    "taskId": "CV1",
+    "condOrder": [
+      "RETRIEVAL_75",
+      "FULL_CONTROL"
+    ]
+  },
+  {
+    "rep": 9,
+    "taskId": "CV2",
+    "condOrder": [
+      "FULL_CONTROL",
+      "RETRIEVAL_75"
+    ]
+  },
+  {
+    "rep": 9,
+    "taskId": "RA1",
+    "condOrder": [
+      "RETRIEVAL_75",
+      "FULL_CONTROL"
+    ]
+  },
+  {
+    "rep": 9,
+    "taskId": "RA2",
+    "condOrder": [
+      "FULL_CONTROL",
+      "RETRIEVAL_75"
+    ]
+  },
+  {
+    "rep": 9,
+    "taskId": "DC1",
+    "condOrder": [
+      "RETRIEVAL_75",
+      "FULL_CONTROL"
+    ]
+  },
+  {
+    "rep": 9,
+    "taskId": "DC2",
+    "condOrder": [
+      "FULL_CONTROL",
+      "RETRIEVAL_75"
+    ]
+  }
+]

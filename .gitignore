@@ -1,0 +1,42 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+build/
+
+# Test / coverage output
+coverage/
+
+# Logs (runtime benchmark/execution logs are disposable and may contain
+# environment-specific local paths). Research evidence (results.json,
+# checkpoint.json, analysis files, reports) is NOT ignored and remains trackable.
+*.log
+logs/
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Editor / IDE
+.vscode/
+.idea/
+*.code-workspace
+# Editor-extension scratch state (regenerates; never commit)
+babel.json
+
+# OS metadata
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+
+# Source maps (compiled)
+*.js.map
+*.d.ts.map
