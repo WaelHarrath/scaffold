@@ -316,6 +316,92 @@ Phase 9 performed a read-only repository audit and produced the final consolidat
 
 ---
 
+### Phase 10: General-Purpose Runtime Productization — COMPLETE (ENGINEERING)
+
+**Status:** Done — **runtime engineering release on frozen research** (2026-08-28)
+
+Phase 10 is an *engineering* phase, not a research phase. It does **not** re-open
+the research freeze, add cognitive mechanisms, models, benchmarks, or benchmark
+results. It productizes the frozen prototype into a general-purpose, domain-agnostic
+runtime library around the validated pipeline. Full details in
+[`PHASE10-REPORT.md`](./PHASE10-REPORT.md); integrity in
+[`PHASE10-INTEGRITY-MANIFEST.md`](./PHASE10-INTEGRITY-MANIFEST.md).
+
+**What was done:**
+- Added a **stable public API** entry point (`src/index.ts`): `createScaffold(...)`
+  → `Scaffold` with `config`, `registerTool`, `registerTools`, `execute`, `logger`; a
+  structured `ScaffoldResult`; package entry fields (`main`/`module`/`types`/`exports`).
+- Added a **generic tool system** (`src/tools.ts`): host-supplied, domain-agnostic
+  `ScaffoldTool`s with a registry and an additive `createToolExecutor` dispatch seam
+  over the frozen executor (first-token match on `run`; non-matching commands unchanged).
+- Added a **model-provider abstraction / configurable endpoint**: `Qwen3Adapter` and
+  `MiniLMAdapter` gained additive default-preserving `baseUrl` constructor params.
+- Added **configuration validation** (`src/config.ts`) with the frozen validated
+  defaults enforced at construction.
+- Added a **structured error model** (`src/errors.ts`): typed `ScaffoldError`
+  subclasses with stable `code`s and a redacted `toSafeString()`.
+- Added **cancellation & timeout**: `execute(task, { signal })` → `CancelledError`;
+  `executionTimeoutMs` → `TimeoutError`.
+- Added **observability & security-safe logging** (`src/logger.ts`): `executionId`,
+  token/tool/retrieval stats, level filtering, silent mode; no credentials/prompts/
+  tool payloads logged.
+- Added **52 new tests** (config, errors, tools, runtime) — **227/227 passing**,
+  all 175 frozen tests preserved. `npm run typecheck` and `npm run build` clean.
+- Added `examples/{basic,tools,assistant}.ts` (public-API usage).
+
+**Domain-agnostic + integrity:** `src/`, examples, and new tests contain no domain
+terms (CSR/ESG/KPI/governance/compliance/sustainability/carbon/scorecard/materiality —
+grep-verified). No secrets introduced. All frozen research files and benchmark
+results are SHA-256 byte-identical to the published commit
+(see `PHASE10-INTEGRITY-MANIFEST.md`). Frozen mechanism files
+(`scaffold-loop.ts`, `executor.ts`, `system-prompt.ts`) are untouched.
+
+**Working tree (NOT committed / pushed / released):** modified `package.json`,
+`src/model/qwen3.ts`, `src/model/embedding.ts` (additive/default-preserving); new
+`src/{config,errors,tools,logger,runtime,index}.ts`, 4 test files, 3 examples, and
+the two Phase 10 documents.
+
+> **Note:** The research freeze remains **FROZEN**. Phase 10 is engineering work
+> only; the research claims, mechanisms, and evidence are unchanged.
+
+---
+
+### Phase 11: Scaffold Runtime Productization & Real-World Integration — COMPLETE (PRODUCTIZATION)
+
+**Status:** Done
+
+Phase 11 engineering/productization on the **public runtime path only** — the
+frozen research internals (`scaffold-loop.ts`, `executor.ts`, `system-prompt.ts`)
+and the frozen benchmark path are left byte-identical. No new cognitive
+mechanisms, no benchmarks, no models, no secret handling beyond layered
+redaction, no publish/commit/release.
+
+- **Read-only audit** (`benchmarks/PHASE11-AUDIT.md`): classified findings
+  (2 BLOCKER, 1 HIGH, 3 MEDIUM, 2 LOW, REST READY) on the public runtime surface.
+- **Workspace path containment** (`src/workspace.ts`): `resolveWithinWorkspace`
+  rejects `../`, absolute-escape, and symlink/junction escapes; `isInside` and
+  `toWorkspaceRelative` helpers.
+- **Secure-executor wrapper** (`src/secure-executor.ts`): wraps the frozen
+  executor on the public path — pre-flight target containment, re-bases and
+  filters `filesChanged` onto the workspace (fixes the frozen `process.cwd()`
+  mis-report), and redacts secret-like output/error text.
+- **Secret redaction** (`src/redact.ts`): `redactText` / `redactWithFlag` over a
+  conservative default pattern set plus caller-supplied secret strings/label.
+- **Public API refinements:** `scaffold.run(task, options)` added as the primary
+  alias of `execute`; new config flags `workspaceContainment` (default true) and
+  `redactSecrets` (default true); new exports in `src/index.ts`.
+- **Generic integration example** `examples/basic-project/` (domain-agnostic, no
+  secrets, runs without Ollama via stub providers).
+- **New tests:** `tests/workspace.test.ts`, `tests/secure-executor.test.ts`,
+  `tests/redact.test.ts` → **260 / 260 tests passing (18 files)**, typecheck and
+  build clean.
+
+**Integrity:** frozen research mechanism files untouched; frozen benchmark
+results/reports unchanged; verified against `PHASE10-INTEGRITY-MANIFEST.md`.
+No commit / push / release performed.
+
+---
+
 ## RESEARCH FREEZE
 
 The SCAFFOLD research program is **FROZEN** as of 2026-08-28. No new cognitive mechanisms, no new benchmarks, no new models, no Phase 10. The governor, feedback semantics, tasks, prompts, and frozen configuration (`qwen3:4b-instruct` + `all-minilm:latest`, 4096-token window) are locked. Historical artifacts (Phases 0-8 and `scaffold-v1-history`) are immutable. Any future deviation requires explicit approval to re-open the freeze.

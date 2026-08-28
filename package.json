@@ -1,8 +1,28 @@
 {
   "name": "scaffold",
   "version": "2.0.0",
+  "description": "Domain-agnostic procedural coding-agent runtime with a validated model pipeline, generic tool system, and a stable public API (Phase 10 engineering release on frozen research).",
   "private": true,
   "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
   "scripts": {
     "build": "tsc",
     "typecheck": "tsc --noEmit",

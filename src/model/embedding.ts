@@ -5,8 +5,10 @@ const OLLAMA_BASE = "http://localhost:11434";
 export class MiniLMAdapter implements EmbeddingModel {
   readonly modelId = "all-minilm:latest";
 
+  constructor(private readonly baseUrl: string = OLLAMA_BASE) {}
+
   async embed(text: string): Promise<number[]> {
-    const res = await fetch(`${OLLAMA_BASE}/api/embed`, {
+    const res = await fetch(`${this.baseUrl.replace(/\/$/, "")}/api/embed`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ model: this.modelId, input: text }),
@@ -17,7 +19,7 @@ export class MiniLMAdapter implements EmbeddingModel {
   }
 
   async embedBatch(texts: string[]): Promise<number[][]> {
-    const res = await fetch(`${OLLAMA_BASE}/api/embed`, {
+    const res = await fetch(`${this.baseUrl.replace(/\/$/, "")}/api/embed`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ model: this.modelId, input: texts }),

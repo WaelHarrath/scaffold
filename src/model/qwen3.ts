@@ -5,10 +5,13 @@ const OLLAMA_BASE = "http://localhost:11434";
 export class Qwen3Adapter implements ReasoningModel {
   readonly modelId = "qwen3:4b-instruct";
 
-  constructor(private readonly contextSize: number = 4096) {}
+  constructor(
+    private readonly contextSize: number = 4096,
+    private readonly baseUrl: string = OLLAMA_BASE,
+  ) {}
 
   async generate(request: ModelRequest): Promise<ModelResponse> {
-    const res = await fetch(`${OLLAMA_BASE}/api/chat`, {
+    const res = await fetch(`${this.baseUrl.replace(/\/$/, "")}/api/chat`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
@@ -25,7 +28,10 @@ export class Qwen3Adapter implements ReasoningModel {
         stream: false,
       }),
     });
-    if (!res.ok) throw new Error(`Ollama error: ${res.status} ${await res.text()}`);
+    if (!res.ok) {
+      const body = (await res.text()).slice(0, 500);
+      throw new Error(`Ollama error: ${res.status} ${body}`);
+    }
     const data = (await res.json()) as {
       message?: { content: string };
       prompt_eval_count?: number;

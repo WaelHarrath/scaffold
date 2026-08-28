@@ -1,0 +1,8 @@
+TODO list
+=========
+
+- [ ] Write the user-facing summary page.
+- [ ] Add a unit test for the parser.
+- [ ] Document the configuration options.
+
+Deliverable: a short summary of these items.
