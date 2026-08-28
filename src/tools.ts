@@ -14,7 +14,7 @@ import { ToolError } from "./errors.js";
 export interface ScaffoldTool<Args = unknown, Out = unknown> {
   /** Unique tool name, e.g. "query_database", "get_weather". */
   readonly name: string;
-  /** Human-readable description (used for logging/docs; the frozen system
+  /** Human-readable description (used for logging/docs; the system
    *  prompt does not advertise host tools). */
   readonly description?: string;
   /** Optional loose schema description of the accepted input. Not enforced;
@@ -24,7 +24,7 @@ export interface ScaffoldTool<Args = unknown, Out = unknown> {
   execute(input: Args): Promise<ToolResult<Out>> | ToolResult<Out>;
 }
 
-/** Structured result returned by a tool. Mirrors the frozen ExecutionResult shape. */
+/** Structured result returned by a tool. Mirrors the ExecutionResult shape. */
 export interface ToolResult<Out = unknown> {
   readonly success: boolean;
   readonly output: string;
@@ -43,7 +43,7 @@ export interface ToolInvocationResult {
   readonly filesChanged: string[];
 }
 
-/** Maps a registered tool result onto the frozen ExecutionResult shape. */
+/** Maps a registered tool result onto the ExecutionResult shape. */
 export function toExecutionResult(name: string, result: ToolResult): ToolInvocationResult {
   return {
     toolName: name,
@@ -113,13 +113,13 @@ export function createToolRegistry(): ToolRegistry {
 }
 
 /**
- * Wraps the frozen default executor so that registered tools can be dispatched
+ * Wraps the default executor so that registered tools can be dispatched
  * through the model's generic `run` action: if the command's first token matches
  * a registered tool name, the tool is invoked instead of a shell command.
  *
- * This is an additive, domain-agnostic extension. The frozen executor behavior
- * is preserved for every non-tool command, so the frozen research runtime is
- * unaffected when no tools are registered.
+ * This is an additive, domain-agnostic extension. The default executor behavior
+ * is preserved for every non-tool command, so the base runtime is unaffected
+ * when no tools are registered.
  */
 export function createToolExecutor(
   defaultExecutor: Executor,

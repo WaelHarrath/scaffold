@@ -71,7 +71,7 @@ export function formatFullPrompt(
   return parts.join("\n");
 }
 
-// ─── Phase 3 ablation format functions ───────────────────────────────────────
+// ─── Ablation format functions ────────────────────────────────────────────────
 
 export function formatStateOnlyPrompt(state: TaskState, _feedback: string | null): string {
   const parts: string[] = [];

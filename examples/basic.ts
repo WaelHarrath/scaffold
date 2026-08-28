@@ -1,7 +1,7 @@
 /**
  * Minimal SCAFFOLD usage.
  *
- * Runs the runtime with frozen validated defaults (model qwen3:4b-instruct,
+ * Runs the runtime with the validated defaults (model qwen3:4b-instruct,
  * context window 4096). Requires an Ollama server at http://localhost:11434.
  *
  *   npx tsx examples/basic.ts

@@ -12,14 +12,7 @@
   },
   "include": [
     "src/**/*.ts",
-    "benchmarks/phase6-runner.ts",
-    "benchmarks/phase7-runner.ts",
-    "benchmarks/phase8-parity-runner.ts",
-    "benchmarks/phase8-audit.ts",
-    "scripts/run-phase7.ts",
-    "scripts/write-phase7-report.ts",
-    "scripts/run-phase8.ts",
-    "scripts/write-phase8-report.ts"
+    "tests/**/*.ts"
   ],
-  "exclude": ["benchmarks/phase3-runner.ts", "benchmarks/phase4-runner.ts"]
+  "exclude": ["node_modules", "dist"]
 }

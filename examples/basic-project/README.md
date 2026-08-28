@@ -43,4 +43,4 @@ then signals completion.
 To run against the actual `qwen3:4b-instruct` model through Ollama, comment out
 the `model`/`embeddingModel` overrides in `run.ts` and start Ollama with the
 model loaded first. The runtime defaults to `http://localhost:11434` and the
-frozen validated settings (context window 4096, temperature 0.1, etc).
+validated settings (context window 4096, temperature 0.1, etc).

@@ -5,21 +5,18 @@ import { resolveWithinWorkspace, toWorkspaceRelative } from "./workspace.js";
 import { redactText, type RedactOptions } from "./redact.js";
 
 /**
- * Security + workspace-safety wrapper around the frozen executor, applied on the
+ * Security + workspace-safety wrapper around the base executor, applied on the
  * PUBLIC runtime path only.
  *
- * The frozen `executor.ts` is part of the frozen research surface and must not
- * be modified. This wrapper layers on top of it:
+ * The base `executor.ts` is treated as part of the fixed execution surface and
+ * is never modified. This wrapper layers on top of it:
  *
  *  - containment of `inspect`/`search`/`edit` targets inside the workspace
  *    (rejects `../`, absolute-escape, and symlink escape);
  *  - re-basing + filtering of `filesChanged` onto workspace-relative paths
- *    (the frozen executor mis-reports them relative to `process.cwd()`);
+ *    (the base executor reports them relative to `process.cwd()`);
  *  - secret redaction of tool output/error text before it reaches the host or
  *    the model-feeding feedback layer.
- *
- * Frozen benchmark behavior is unaffected because the benchmark runner uses the
- * raw frozen executor directly, not this wrapper.
  */
 
 export interface SecureExecutorOptions {

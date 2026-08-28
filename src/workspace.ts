@@ -5,12 +5,12 @@ import { ExecutionError } from "./errors.js";
 /**
  * Workspace path containment for the public SCAFFOLD runtime.
  *
- * The frozen research executor resolves action targets with
+ * The base executor resolves action targets with
  * `path.resolve(workingDir, target)` and never verifies the result stays inside
  * the workspace, so a model action like `inspect TARGET:../../secret.txt` can
  * read (or `edit` can write) files outside the sandbox. This module provides a
  * robust containment check that is layered on the PUBLIC runtime path only; the
- * frozen executor and the frozen benchmark runner are untouched.
+ * base executor is left untouched.
  */
 
 export interface WorkspaceResolveOptions {
@@ -113,8 +113,8 @@ function realpathOrNull(p: string): string | null {
 }
 
 /**
- * Convert an absolute path produced by the frozen executor's `diffFiles` into a
- * workspace-relative path when possible. The frozen executor reports changed
+ * Convert an absolute path produced by the base executor's `diffFiles` into a
+ * workspace-relative path when possible. The base executor reports changed
  * files relative to `process.cwd()`, which is wrong when the host cwd differs
  * from the workspace; this re-bases those paths onto the workspace for stable,
  * portable reporting.

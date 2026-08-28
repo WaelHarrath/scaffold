@@ -3,7 +3,8 @@ import type { FeedbackResult } from "../feedback/feedback.js";
 
 // ─── STATE compression levels ────────────────────────────────────────────────
 // All levels use ONLY information already present in TaskState. No new state is
-// invented. These are strict subsets of the Phase 5 FULL_STATE representation.
+// invented. These are strict subsets of the full-state representation used in
+// the validated configuration.
 
 export type StateCompressionLevel = "FULL_STATE" | "COMPACT_STATE" | "MIN_STATE" | "PROGRESS_STATE";
 
@@ -47,7 +48,7 @@ export function formatState(state: TaskState, level: StateCompressionLevel): str
 
 // ─── FEEDBACK compression levels ─────────────────────────────────────────────
 // All levels use ONLY information already present in FeedbackResult. These are
-// strict subsets / tighter-truncations of the Phase 5 FULL_FEEDBACK format.
+// strict subsets / tighter-truncations of the full-feedback format.
 
 export type FeedbackCompressionLevel = "FULL_FEEDBACK" | "COMPACT_FEEDBACK" | "MINIMAL_FEEDBACK";
 
@@ -102,7 +103,8 @@ export function formatFeedbackCompressed(
 // ─── RETRIEVAL budget scaling ────────────────────────────────────────────────
 // The retrieval ALGORITHM is unchanged. Only the amount of retrieved content
 // admitted into the 4096-token context varies. FULL = top-3 items, 300 chars
-// each (Phase 5 behavior). Lower budgets reduce the per-item slice length and
+// each (validated-configuration behavior). Lower budgets reduce the per-item
+// slice length and
 // the number of items admitted.
 
 export type RetrievalBudgetLevel = "FULL" | "RETRIEVAL_75" | "RETRIEVAL_50" | "RETRIEVAL_MIN";

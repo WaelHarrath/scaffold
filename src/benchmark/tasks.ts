@@ -466,7 +466,7 @@ const AS1: TaskDefinition = {
   workspace: [
     {
       path: "src/config.ts",
-      content: "const API_KEY = 'sk-12345';\nexport default API_KEY;\n",
+      content: "const API_KEY = 'DUMMY_FIXTURE_VALUE';\nexport default API_KEY;\n",
     },
   ],
   verify(dir, actions) {

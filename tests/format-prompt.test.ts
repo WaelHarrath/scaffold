@@ -8,8 +8,8 @@ import {
   formatFullPrompt,
 } from "../src/execution/format-prompt.js";
 
-// Phase 4 condition formatters used in the controlled efficiency comparison.
-// These tests verify each Phase 4 condition renders exactly the intended
+// Condition formatters used in the controlled efficiency comparison.
+// These tests verify each condition renders exactly the intended
 // prompt sections, and that the NEW formatRetrievalOnlyPrompt correctly
 // isolates retrieval (no FEEDBACK or STATE leakage).
 
@@ -23,7 +23,7 @@ function richState() {
   return s;
 }
 
-describe("Phase 4 condition formatters", () => {
+describe("condition formatters", () => {
   it("MODEL_ONLY renders only the TASK section", () => {
     const out = formatModelOnlyPrompt(richState(), "FEEDBACK: RESULT: FAILURE");
     expect(out).toBe("TASK: fix the build");
@@ -76,7 +76,7 @@ describe("Phase 4 condition formatters", () => {
   });
 
   it("condition formatters never emit FEEDBACK content list label without the FEEDBACK mechanism", () => {
-    // RETRIEVAL_ONLY is the key Phase 4 isolation guarantee: feedback must not leak.
+    // RETRIEVAL_ONLY is the key isolation guarantee: feedback must not leak.
     const withFeedback = formatRetrievalOnlyPrompt(richState(), "RESULT: SUCCESS", "data");
     expect(withFeedback).not.toContain("FEEDBACK");
   });

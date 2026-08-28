@@ -8,7 +8,7 @@ import {
 import { formatRetrievalBudgeted } from "../src/execution/format-compress.js";
 import { TASKS } from "../src/benchmark/tasks.js";
 
-// Phase 8 adaptive policy: deterministic, retrieval-time-only. The ONLY allowed
+// Adaptive policy: deterministic, retrieval-time-only. The ONLY allowed
 // trigger is whether a retrieved source is truncated by the base slice limit
 // (source length > base limit). It must never use model reasoning/hindsight.
 
@@ -107,7 +107,7 @@ describe("adaptive-budget policy (deterministic, retrieval-time signals only)", 
   });
 });
 
-describe("adaptive policy is INERT on the actual Phase 8 benchmark task suite", () => {
+describe("adaptive policy is INERT on the actual benchmark task suite", () => {
   it("no workspace file content exceeds the 225-char base slice limit", () => {
     let max = 0;
     for (const t of TASKS) {

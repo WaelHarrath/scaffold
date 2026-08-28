@@ -1,7 +1,7 @@
 {
   "name": "scaffold",
   "version": "2.0.0",
-  "description": "Domain-agnostic procedural coding-agent runtime with a validated model pipeline, generic tool system, and a stable public API (Phase 10 engineering release on frozen research).",
+  "description": "A lightweight execution and context-management runtime that makes small reasoning models more reliable by managing state, feedback, retrieval, action governance, and execution around the model.",
   "private": true,
   "type": "module",
   "main": "./dist/index.js",
@@ -29,19 +29,7 @@
     "test": "vitest run",
     "test:watch": "vitest",
     "test:coverage": "vitest run --coverage",
-    "clean": "rm -rf dist",
-    "phase1": "tsc && node --experimental-specifier-resolution=node dist/scripts/run-phase1.js",
-    "phase1:run": "npx tsx scripts/run-phase1.ts",
-    "phase3": "npx tsx benchmarks/phase3-runner.ts",
-    "phase3:run": "npx tsx benchmarks/phase3-runner.ts",
-    "phase4": "npx tsx benchmarks/phase4-runner.ts",
-    "phase4:run": "npx tsx benchmarks/phase4-runner.ts",
-    "phase6": "npx tsx scripts/run-phase6.ts",
-    "phase6:run": "npx tsx scripts/run-phase6.ts",
-    "phase7": "npx tsx scripts/run-phase7.ts",
-    "phase7:run": "npx tsx scripts/run-phase7.ts",
-    "phase8": "npx tsx scripts/run-phase8.ts",
-    "phase8:run": "npx tsx scripts/run-phase8.ts"
+    "clean": "rm -rf dist"
   },
   "devDependencies": {
     "@types/node": "^26.2.0",

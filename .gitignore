@@ -8,9 +8,7 @@ build/
 # Test / coverage output
 coverage/
 
-# Logs (runtime benchmark/execution logs are disposable and may contain
-# environment-specific local paths). Research evidence (results.json,
-# checkpoint.json, analysis files, reports) is NOT ignored and remains trackable.
+# Logs (runtime logs are disposable and may contain environment-specific local paths).
 *.log
 logs/
 

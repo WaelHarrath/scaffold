@@ -28,7 +28,7 @@ class FakeEmbedding implements EmbeddingModel {
 }
 
 describe("createScaffold public API", () => {
-  it("exposes frozen validated defaults on config", () => {
+  it("exposes the validated defaults on config", () => {
     const s = createScaffold();
     expect(s.config.model).toBe("qwen3:4b-instruct");
     expect(s.config.contextWindow).toBe(4096);

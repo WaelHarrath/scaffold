@@ -1,7 +1,7 @@
 import { estimateTokens } from "../context/context-budget.js";
 
 // ─── ADAPTIVE RETRIEVAL BUDGET ────────────────────────────────────────────────
-// Phase 8: deterministic, retrieval-time-only adaptive expansion.
+// Deterministic, retrieval-time-only adaptive expansion.
 //
 // Hypothesis (H1): a small retrieval payload is sufficient for most decisions,
 // but some retrieval RESULTS require more context because the source they point
@@ -20,7 +20,7 @@ import { estimateTokens } from "../context/context-budget.js";
 // No model reasoning, hindsight, future/verification outcome, or confidence is
 // used. The decision is a pure function of retrieval-time items.
 //
-// Design note (evidence-driven): on the Phase 8 benchmark's 33 workspace files,
+// Design note (evidence-driven): on the benchmark's 33 workspace files,
 // the longest source is 200 chars, so NO source is ever truncated at the 225-char
 // base limit. Therefore this policy is provably inert (0 expansions) on the
 // current task suite — it is implemented and unit-tested for correctness, but

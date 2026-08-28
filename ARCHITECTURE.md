@@ -1,6 +1,9 @@
 # SCAFFOLD Architecture
 
-> **Research freeze:** This document reflects the frozen implementation. The consolidated, canonical pipeline and mechanism classification are in **[FINAL-ARCHITECTURE.md](./FINAL-ARCHITECTURE.md)**. Measured evidence and limitations are in **[FINAL-EVIDENCE.md](./benchmarks/FINAL-EVIDENCE.md)**, **[LIMITATIONS.md](./LIMITATIONS.md)**, and **[REPRODUCIBILITY.md](./REPRODUCIBILITY.md)**.
+> **Scope:** This document describes the SCAFFOLD runtime implementation and its
+> intended mechanism classification. Measured evidence and boundaries are in
+> **[RESEARCH.md](./RESEARCH.md)**, **[LIMITATIONS.md](./LIMITATIONS.md)**, and
+> **[REPRODUCIBILITY.md](./REPRODUCIBILITY.md)**.
 
 ## System Overview
 
@@ -44,7 +47,7 @@
 - **Endpoint:** Ollama local API (`http://localhost:11434/api/chat`)
 - **Context size:** 4096 tokens (hardcoded)
 - **Role:** Receives a system prompt + structured user prompt, returns a single action string. The model does not execute anything — it only selects the next action.
-- **Parameters:** temperature (default 0.1), num_ctx (4096). The `runScaffoldLoop` default `maxTokens` is 512, but **every benchmark phase invoked the loop with `maxTokens: 256`**, which matches the 256-token reserved-output budget. 256 is the measured operating value.
+- **Parameters:** temperature (default 0.1), num_ctx (4096). The `runScaffoldLoop` default `maxTokens` is 512, but the measured and validated operating value used across evaluation runs is 256, which matches the 256-token reserved-output budget.
 
 ### all-MiniLM (Embedding Only)
 
@@ -264,8 +267,7 @@ src/
 │   ├── qwen3.ts              # Qwen3Adapter (Ollama chat API)
 │   └── embedding.ts          # MiniLMAdapter (Ollama embed API)
 ├── cognition/
-│   ├── action-parser.ts      # parseAction — structured + bare format parsing
-│   └── action-space.ts       # VALID_ACTIONS, isValidAction
+│   └── action-parser.ts      # parseAction — structured + bare format parsing (defines the action space)
 ├── state/
 │   ├── state.ts              # TaskState, createInitialState, cloneState
 │   └── state-manager.ts      # updateStateOnAction, addFailedAction, isStuck
@@ -275,7 +277,7 @@ src/
 ├── feedback/
 │   └── feedback.ts           # FeedbackResult, formatFeedback, estimateFeedbackTokens
 ├── execution/
-│   ├── system-prompt.ts        # frozen SYSTEM_PROMPT (fixed action grammar)
+│   ├── system-prompt.ts        # fixed SYSTEM_PROMPT (fixed action grammar)
 │   ├── format-prompt.ts        # condition formatters (MODEL_ONLY/MINIMAL/RETRIEVAL/FULL + ablations)
 │   ├── format-compress.ts      # STATE/FEEDBACK compression levels; retrieval admission budgets
 │   ├── governor.ts             # GovernorState, govern, recordExecution
@@ -285,9 +287,8 @@ src/
 │   ├── similarity.ts           # cosineSimilarity, rankBySimilarity
 │   ├── embedding-cache.ts      # EmbeddingCache (LRU, SHA-256 keyed)
 │   ├── retriever.ts            # SemanticRetriever — query → embed → rank
-│   └── adaptive-budget.ts      # adaptive admission (Phase 8; NOT SUPPORTED, retained)
+│   └── adaptive-budget.ts      # deterministic adaptive admission (not supported on the current task suite, retained)
 └── benchmark/
     ├── types.ts                # TaskDefinition, TaskResult, WorkspaceFile
-    ├── runner.ts               # runBenchmark — condition matrix runner with checkpointing
     └── tasks.ts                # 30 task definitions (10 easy/10 medium/10 hard, 10 categories)
 ```

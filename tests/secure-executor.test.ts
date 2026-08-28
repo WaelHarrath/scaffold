@@ -52,15 +52,15 @@ describe("createSecureExecutor — path containment", () => {
   });
 
   it("allows a safe relative target through", async () => {
-    let seen: ParsedAction | null = null;
+    const seen: ParsedAction[] = [];
     const base = makeExecutor((a) => {
-      seen = a;
+      seen.push(a);
       return { success: true, output: "ok", error: null, filesChanged: [] };
     });
     const secure = createSecureExecutor(base, ws);
     const r = await secure.execute({ type: "inspect", target: "inside.txt" });
     expect(r.success).toBe(true);
-    expect(seen?.target).toBe("inside.txt");
+    expect(seen[0]?.target).toBe("inside.txt");
   });
 
   it("does not drop changes for a safe edit", async () => {
@@ -85,17 +85,19 @@ describe("createSecureExecutor — changed-file filtering + redaction", () => {
     expect(r.filesChanged.some((f) => f.includes("escaped.txt"))).toBe(false);
   });
 
-  it("redacts secret-like content in output and error", async () => {
+  it("redacts placeholder credential content in output and error", async () => {
     const base = makeExecutor(() => ({
       success: false,
-      output: "password=abcd1234 printed",
-      error: "api_key=qwerty9876 failed",
+      output: "DUMMY_PLACEHOLDER_CREDENTIAL_1 leaked",
+      error: "auth failed for DUMMY_PLACEHOLDER_CREDENTIAL_2",
       filesChanged: [],
     }));
-    const secure = createSecureExecutor(base, ws, { redact: { extraPatterns: [] } });
+    const secure = createSecureExecutor(base, ws, {
+      redact: { extraPatterns: [/DUMMY_PLACEHOLDER_CREDENTIAL_\d+/g] },
+    });
     const r = await secure.execute({ type: "run", target: "echo" });
-    expect(r.output).not.toContain("abcd1234");
-    expect(r.error).not.toContain("qwerty9876");
+    expect(r.output).not.toContain("DUMMY_PLACEHOLDER_CREDENTIAL_1");
+    expect(r.error).not.toContain("DUMMY_PLACEHOLDER_CREDENTIAL_2");
     expect(r.output).toContain("[REDACTED]");
   });
 

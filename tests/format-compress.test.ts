@@ -8,7 +8,7 @@ import {
 } from "../src/execution/format-compress.js";
 import type { FeedbackResult } from "../src/feedback/feedback.js";
 
-// Phase 6 compression variants must be STRICT SUBSETS of the Phase 5 FULL
+// Compression variants must be STRICT SUBSETS of the FULL
 // information — only removing/truncating existing content, never inventing new
 // state or new feedback fields.
 

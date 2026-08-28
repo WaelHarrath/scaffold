@@ -7,7 +7,7 @@ import {
 import { ConfigurationError } from "../src/errors.js";
 
 describe("config defaults", () => {
-  it("resolveConfig uses frozen validated defaults", () => {
+  it("resolveConfig uses the validated defaults", () => {
     const c = resolveConfig({});
     expect(c.model).toBe("qwen3:4b-instruct");
     expect(c.embeddingModel).toBe("all-minilm:latest");

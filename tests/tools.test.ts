@@ -154,12 +154,12 @@ describe("createToolExecutor dispatch", () => {
   });
 });
 
-describe("createToolExecutor with frozen default (local commands)", () => {
-  it("preserves frozen executor behavior for non-tool commands", async () => {
+describe("createToolExecutor with the default executor (local commands)", () => {
+  it("preserves default executor behavior for non-tool commands", async () => {
     const reg = createToolRegistry();
     const exec = createToolExecutor(createExecutor(process.cwd()), reg);
     const res = await exec.execute({ type: "inspect", target: "package.json" });
-    // The frozen executor inspects the file; success depends on file existing.
+    // The default executor inspects the file; success depends on file existing.
     expect(typeof res.success).toBe("boolean");
     expect(res.filesChanged).toBeDefined();
   });
